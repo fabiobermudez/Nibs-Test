@@ -48,6 +48,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        guard let viewModel = viewModel.carDetailViewModel(for: indexPath) else { return }
+        let detailViewController = DetailViewController(viewModel)
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
