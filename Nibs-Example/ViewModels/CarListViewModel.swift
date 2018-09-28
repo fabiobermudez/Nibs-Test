@@ -40,4 +40,10 @@ class CarListViewModel {
         return CarCellViewModel(carName: car.name ?? "", carInfo: String(format: "%@ %@", car.modelName ?? "", car.licensePlate ?? "") , imageUrl: car.carImageURL ?? "")
     }
 
+    func carDetailViewModel(for indexPath: IndexPath) -> CarDetailViewModel? {
+        guard numberOfCars > indexPath.row else { return nil }
+        let car = carList[indexPath.row]
+        return CarDetailViewModel(modelIdentifier: car.modelIdentifier ?? "", modelName: car.modelName ?? "", name: car.name ?? "", color: car.color ?? "", fuelType: car.fuelType?.rawValue ?? "", transmission: car.transmission?.rawValue ?? "", licensePlate: car.licensePlate ?? "", innerCleanliness: car.innerCleanliness?.rawValue ?? "")
+    }
+
 }

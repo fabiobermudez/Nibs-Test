@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		12930048E0B269E4F20120A2 /* Pods_Nibs_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDAA7E7BD8E3CD7F929540D /* Pods_Nibs_ExampleTests.framework */; };
 		5C7A9930CE4B16EF20FC7161 /* Pods_Nibs_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A303236FBB386DF436BCAE6 /* Pods_Nibs_ExampleUITests.framework */; };
+		65B3C4B8215E41DE008188B6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3C4B6215E41DE008188B6 /* DetailViewController.swift */; };
+		65B3C4B9215E41DE008188B6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B3C4B7215E41DE008188B6 /* DetailViewController.xib */; };
+		65B3C4BB215E4AB5008188B6 /* CarDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3C4BA215E4AB5008188B6 /* CarDetailViewModel.swift */; };
 		7F0F35D1215E24E900AFC024 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35D0215E24E900AFC024 /* CarListViewModel.swift */; };
 		7F0F35DC215E290900AFC024 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35D5215E290900AFC024 /* Car.swift */; };
 		7F0F35DD215E290900AFC024 /* CarGatewayHTTPAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35D9215E290900AFC024 /* CarGatewayHTTPAlamofire.swift */; };
@@ -51,6 +54,9 @@
 		2A303236FBB386DF436BCAE6 /* Pods_Nibs_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nibs_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDAA7E7BD8E3CD7F929540D /* Pods_Nibs_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nibs_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D47235168001D4427AEC85A /* Pods-Nibs-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nibs-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nibs-Example/Pods-Nibs-Example.release.xcconfig"; sourceTree = "<group>"; };
+		65B3C4B6215E41DE008188B6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		65B3C4B7215E41DE008188B6 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		65B3C4BA215E4AB5008188B6 /* CarDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModel.swift; sourceTree = "<group>"; };
 		7F0F35D0215E24E900AFC024 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
 		7F0F35D5215E290900AFC024 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		7F0F35D9215E290900AFC024 /* CarGatewayHTTPAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarGatewayHTTPAlamofire.swift; sourceTree = "<group>"; };
@@ -154,6 +160,8 @@
 		7F0F35E1215E2A4F00AFC024 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				65B3C4B6215E41DE008188B6 /* DetailViewController.swift */,
+				65B3C4B7215E41DE008188B6 /* DetailViewController.xib */,
 				7F2DED04215E1D3700D0537E /* HomeViewController.swift */,
 				7F2DED30215E1DAB00D0537E /* HomeViewController.xib */,
 			);
@@ -240,6 +248,7 @@
 			children = (
 				7F0F35D0215E24E900AFC024 /* CarListViewModel.swift */,
 				7F0F35E7215E2DEC00AFC024 /* CarCellViewModel.swift */,
+				65B3C4BA215E4AB5008188B6 /* CarDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -377,6 +386,7 @@
 			files = (
 				7F2DED0D215E1D3B00D0537E /* LaunchScreen.storyboard in Resources */,
 				7F2DED31215E1DAB00D0537E /* HomeViewController.xib in Resources */,
+				65B3C4B9215E41DE008188B6 /* DetailViewController.xib in Resources */,
 				7F0F35E6215E2A8300AFC024 /* CarTableViewCell.xib in Resources */,
 				7F2DED0A215E1D3B00D0537E /* Assets.xcassets in Resources */,
 			);
@@ -478,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B3C4B8215E41DE008188B6 /* DetailViewController.swift in Sources */,
 				7F0F35E0215E298C00AFC024 /* ResultType.swift in Sources */,
 				7F2DED05215E1D3700D0537E /* HomeViewController.swift in Sources */,
 				7F0F35E5215E2A8300AFC024 /* CarTableViewCell.swift in Sources */,
@@ -486,6 +497,7 @@
 				7F2DED03215E1D3700D0537E /* AppDelegate.swift in Sources */,
 				7F0F35DC215E290900AFC024 /* Car.swift in Sources */,
 				7F0F35F1215E584100AFC024 /* UIIMageView+URL.swift in Sources */,
+				65B3C4BB215E4AB5008188B6 /* CarDetailViewModel.swift in Sources */,
 				7F0F35EB215E30B500AFC024 /* NSObject+ClassName.swift in Sources */,
 				7F0F35D1215E24E900AFC024 /* CarListViewModel.swift in Sources */,
 				7F0F35DE215E290900AFC024 /* CarGateway.swift in Sources */,
