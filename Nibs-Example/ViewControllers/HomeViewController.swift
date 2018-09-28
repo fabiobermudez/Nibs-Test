@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
 
     init(_ viewModel: CarListViewModel) {
         self.viewModel = viewModel
-        super.init(nibName: "HomeViewController", bundle: nil)
+        super.init(nibName: HomeViewController.className(), bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(CarTableViewCell.self, forCellReuseIdentifier: "CarTableViewCell")
+        tableView.register(CarTableViewCell.self, forCellReuseIdentifier: CarTableViewCell.className())
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -41,7 +41,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CarTableViewCell", for: indexPath) as? CarTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.className(), for: indexPath) as? CarTableViewCell else { return UITableViewCell() }
         cell.configurateWithViewMode(viewModel.carCellViewModelForIndex(indexPath.row))
         return cell
     }
@@ -49,5 +49,4 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
     }
-
 }
