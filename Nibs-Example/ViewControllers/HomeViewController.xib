@@ -18,8 +18,21 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wnK-tV-7KP">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wnK-tV-7KP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ap9-EK-VKu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wnK-tV-7KP" secondAttribute="trailing" id="IAQ-Sy-r6C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wnK-tV-7KP" secondAttribute="bottom" id="au2-Fj-Zhi"/>
+                <constraint firstItem="wnK-tV-7KP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hxB-fi-ifU"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
     </objects>
 </document>

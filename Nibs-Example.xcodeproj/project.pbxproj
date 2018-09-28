@@ -14,6 +14,8 @@
 		7F0F35DD215E290900AFC024 /* CarGatewayHTTPAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35D9215E290900AFC024 /* CarGatewayHTTPAlamofire.swift */; };
 		7F0F35DE215E290900AFC024 /* CarGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35DB215E290900AFC024 /* CarGateway.swift */; };
 		7F0F35E0215E298C00AFC024 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35DF215E298C00AFC024 /* ResultType.swift */; };
+		7F0F35E5215E2A8300AFC024 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35E3215E2A8300AFC024 /* CarTableViewCell.swift */; };
+		7F0F35E6215E2A8300AFC024 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F0F35E4215E2A8300AFC024 /* CarTableViewCell.xib */; };
 		7F2DED03215E1D3700D0537E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DED02215E1D3700D0537E /* AppDelegate.swift */; };
 		7F2DED05215E1D3700D0537E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DED04215E1D3700D0537E /* HomeViewController.swift */; };
 		7F2DED0A215E1D3B00D0537E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2DED09215E1D3B00D0537E /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		7F0F35D9215E290900AFC024 /* CarGatewayHTTPAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarGatewayHTTPAlamofire.swift; sourceTree = "<group>"; };
 		7F0F35DB215E290900AFC024 /* CarGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarGateway.swift; sourceTree = "<group>"; };
 		7F0F35DF215E298C00AFC024 /* ResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
+		7F0F35E3215E2A8300AFC024 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		7F0F35E4215E2A8300AFC024 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 		7F2DECFF215E1D3700D0537E /* Nibs-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nibs-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2DED02215E1D3700D0537E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F2DED04215E1D3700D0537E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +145,24 @@
 			path = InMemory;
 			sourceTree = "<group>";
 		};
+		7F0F35E1215E2A4F00AFC024 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F2DED04215E1D3700D0537E /* HomeViewController.swift */,
+				7F2DED30215E1DAB00D0537E /* HomeViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7F0F35E2215E2A5F00AFC024 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7F0F35E3215E2A8300AFC024 /* CarTableViewCell.swift */,
+				7F0F35E4215E2A8300AFC024 /* CarTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		7F2DECF6215E1D3700D0537E = {
 			isa = PBXGroup;
 			children = (
@@ -166,12 +188,12 @@
 		7F2DED01215E1D3700D0537E /* Nibs-Example */ = {
 			isa = PBXGroup;
 			children = (
+				7F0F35E2215E2A5F00AFC024 /* Cells */,
+				7F0F35E1215E2A4F00AFC024 /* ViewControllers */,
 				7F0F35D4215E290900AFC024 /* Entities */,
 				7F2DED32215E1E5900D0537E /* ViewModels */,
 				7F0F35DF215E298C00AFC024 /* ResultType.swift */,
 				7F2DED02215E1D3700D0537E /* AppDelegate.swift */,
-				7F2DED04215E1D3700D0537E /* HomeViewController.swift */,
-				7F2DED30215E1DAB00D0537E /* HomeViewController.xib */,
 				7F2DED09215E1D3B00D0537E /* Assets.xcassets */,
 				7F2DED0B215E1D3B00D0537E /* LaunchScreen.storyboard */,
 				7F2DED0E215E1D3B00D0537E /* Info.plist */,
@@ -338,6 +360,7 @@
 			files = (
 				7F2DED0D215E1D3B00D0537E /* LaunchScreen.storyboard in Resources */,
 				7F2DED31215E1DAB00D0537E /* HomeViewController.xib in Resources */,
+				7F0F35E6215E2A8300AFC024 /* CarTableViewCell.xib in Resources */,
 				7F2DED0A215E1D3B00D0537E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +463,7 @@
 			files = (
 				7F0F35E0215E298C00AFC024 /* ResultType.swift in Sources */,
 				7F2DED05215E1D3700D0537E /* HomeViewController.swift in Sources */,
+				7F0F35E5215E2A8300AFC024 /* CarTableViewCell.swift in Sources */,
 				7F0F35DD215E290900AFC024 /* CarGatewayHTTPAlamofire.swift in Sources */,
 				7F2DED03215E1D3700D0537E /* AppDelegate.swift in Sources */,
 				7F0F35DC215E290900AFC024 /* Car.swift in Sources */,
