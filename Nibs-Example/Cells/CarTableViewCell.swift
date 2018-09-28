@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CarTableViewCell: UITableViewCell {
 
@@ -18,10 +19,12 @@ class CarTableViewCell: UITableViewCell {
         super.prepareForReuse()
         carNameLabel.text = nil
         carInfoLabel.text = nil
+        carImageView.image = #imageLiteral(resourceName: "stockImage")
     }
 
     func configurateWithViewMode(_ viewModel: CarCellViewModel) {
         carNameLabel.text = viewModel.carName
         carInfoLabel.text = viewModel.carInfo
+        //carImageView.fetchImage(with: URL(string: viewModel.imageUrl))
     }
 }

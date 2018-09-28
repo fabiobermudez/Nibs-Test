@@ -41,3 +41,11 @@ struct Car: Codable {
     
     // NOTE: I normally assign enums to types that rarely change over time. I assumed these three don't change very often, but it could be implemented in other parameters.
 }
+
+extension Car {
+    var carImageURL: String? {
+        guard let modelIdentifier = modelIdentifier else {return nil }
+        guard let color = color else { return nil }
+        return "https://prod.drive-now-content.com/fileadmin/user_upload_global/assets/cars/" + modelIdentifier + "/" + color + "/2x/car.png"
+    }
+}

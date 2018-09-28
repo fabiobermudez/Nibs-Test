@@ -18,6 +18,7 @@
 		7F0F35E6215E2A8300AFC024 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F0F35E4215E2A8300AFC024 /* CarTableViewCell.xib */; };
 		7F0F35E8215E2DEC00AFC024 /* CarCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35E7215E2DEC00AFC024 /* CarCellViewModel.swift */; };
 		7F0F35EB215E30B500AFC024 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35EA215E30B500AFC024 /* NSObject+ClassName.swift */; };
+		7F0F35F1215E584100AFC024 /* UIIMageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F35F0215E584100AFC024 /* UIIMageView+URL.swift */; };
 		7F2DED03215E1D3700D0537E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DED02215E1D3700D0537E /* AppDelegate.swift */; };
 		7F2DED05215E1D3700D0537E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2DED04215E1D3700D0537E /* HomeViewController.swift */; };
 		7F2DED0A215E1D3B00D0537E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2DED09215E1D3B00D0537E /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		7F0F35E4215E2A8300AFC024 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 		7F0F35E7215E2DEC00AFC024 /* CarCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellViewModel.swift; sourceTree = "<group>"; };
 		7F0F35EA215E30B500AFC024 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		7F0F35F0215E584100AFC024 /* UIIMageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIMageView+URL.swift"; sourceTree = "<group>"; };
 		7F2DECFF215E1D3700D0537E /* Nibs-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nibs-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2DED02215E1D3700D0537E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F2DED04215E1D3700D0537E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				7F0F35DF215E298C00AFC024 /* ResultType.swift */,
 				7F0F35EA215E30B500AFC024 /* NSObject+ClassName.swift */,
+				7F0F35F0215E584100AFC024 /* UIIMageView+URL.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				7F0F35E8215E2DEC00AFC024 /* CarCellViewModel.swift in Sources */,
 				7F2DED03215E1D3700D0537E /* AppDelegate.swift in Sources */,
 				7F0F35DC215E290900AFC024 /* Car.swift in Sources */,
+				7F0F35F1215E584100AFC024 /* UIIMageView+URL.swift in Sources */,
 				7F0F35EB215E30B500AFC024 /* NSObject+ClassName.swift in Sources */,
 				7F0F35D1215E24E900AFC024 /* CarListViewModel.swift in Sources */,
 				7F0F35DE215E290900AFC024 /* CarGateway.swift in Sources */,

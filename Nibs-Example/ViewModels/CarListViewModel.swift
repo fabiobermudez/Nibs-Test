@@ -33,10 +33,11 @@ class CarListViewModel {
         }
     }
 
+
     func carCellViewModelForIndex(_ index: Int) -> CarCellViewModel? {
         guard carList.count > index else { return nil }
         let car = carList[index]
-        return CarCellViewModel(carName: car.name ?? "", carInfo: String(format: "%@ %@", car.modelName ?? "", car.licensePlate ?? "") , imageUrl: "")
+        return CarCellViewModel(carName: car.name ?? "", carInfo: String(format: "%@ %@", car.modelName ?? "", car.licensePlate ?? "") , imageUrl: car.carImageURL ?? "")
     }
 
 }
