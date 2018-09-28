@@ -10,6 +10,12 @@ import Foundation
 
 struct CarListViewModel {
 
+    var numberOfCars: Int {
+        return 0
+    }
 
+    func carCellViewModelForIndex(_ index: Int) -> CarCellViewModel  {
+        return CarCellViewModel()
+    }
 
 }

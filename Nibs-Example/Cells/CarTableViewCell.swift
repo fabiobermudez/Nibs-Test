@@ -18,5 +18,8 @@ class CarTableViewCell: UITableViewCell {
         super.prepareForReuse()
     }
 
-    
+    func configurateWithViewMode(_ viewModel: CarCellViewModel) {
+
+    }
+
 }
