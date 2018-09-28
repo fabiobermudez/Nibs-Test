@@ -23,14 +23,15 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(CarTableViewCell.self, forCellReuseIdentifier: CarTableViewCell.className())
-        // Do any additional setup after loading the view, typically from a nib.
+        tableView.register(UINib(nibName: CarTableViewCell.className(), bundle: nil), forCellReuseIdentifier: CarTableViewCell.className())
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 126
+        viewModel.requestData { [weak self] (_) in
+            self?.tableView.reloadData()
+        }
     }
-
-
 }
 
 
@@ -42,7 +43,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.className(), for: indexPath) as? CarTableViewCell else { return UITableViewCell() }
-        cell.configurateWithViewMode(viewModel.carCellViewModelForIndex(indexPath.row))
+        if let viewModel = viewModel.carCellViewModelForIndex(indexPath.row) { cell.configurateWithViewMode(viewModel) }
         return cell
     }
 

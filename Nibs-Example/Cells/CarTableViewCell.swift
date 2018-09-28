@@ -10,16 +10,18 @@ import UIKit
 
 class CarTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var carImageView: UIImageView!
-    @IBOutlet weak var carNameLabel: UILabel!
-    @IBOutlet weak var carInfoLabel: UILabel!
+    @IBOutlet var carImageView: UIImageView!
+    @IBOutlet var carNameLabel: UILabel!
+    @IBOutlet var carInfoLabel: UILabel!
 
     override func prepareForReuse() {
         super.prepareForReuse()
+        carNameLabel.text = nil
+        carInfoLabel.text = nil
     }
 
     func configurateWithViewMode(_ viewModel: CarCellViewModel) {
-
+        carNameLabel.text = viewModel.carName
+        carInfoLabel.text = viewModel.carInfo
     }
-
 }

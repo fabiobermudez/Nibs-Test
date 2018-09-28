@@ -9,5 +9,7 @@
 import Foundation
 
 struct CarCellViewModel {
-    
+    let carName: String
+    let carInfo: String
+    let imageUrl: String
 }
